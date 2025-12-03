@@ -70,8 +70,8 @@ def test_null_value():
 def test_filter():
     df = raw_input_df()
     pdf=df.toPandas()
-    filtered = filter_country(pdf, "DZA")
-    assert filtered.iso_code.drop_duplicates()[0] == "DZA"
+    filtered = filter_country(pdf, "USA")
+    assert filtered.iso_code.drop_duplicates()[0] == "USA"
 
 
 
